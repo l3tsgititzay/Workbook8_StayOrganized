@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ToDo.html">ToDo</a>
+        <a href="newToDo.html">New ToDo</a>
+        <a href="new_user.html">New User</a>
+
+    </nav>
+    <h1>Home / Stay Organized</h1>
+    <div id="todos-container"></div>
+    <div>
+        <label for="Todos">Choose a ToDo</label>
+        <select id="todos-container"></select>
+        <option> list of todos go here </option>
+
+    </div>
+    <script>
+        window.onload = () => {
+            fetch("http://localhost:8083/api/todos")
+                .then((res))=> res.json(
+
+                )
+        }
+    </script>
+</body>
+
+</html>
